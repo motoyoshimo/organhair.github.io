@@ -1,0 +1,1411 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing:border-box; word-break:break-all;}
+
+
+/* ボディー基本設定 */
+body{
+    color:#333;
+    font-size:12px;
+    /* line-height:170%; */
+    background-color:#edede8;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+a:hover{
+    color:red;/*色は必要に応じて変更してください*/
+}
+a:focus{
+    color:blue;/*色は必要に応じて変更してください*/
+}
+
+
+/*ボタン*/
+button{
+    appearance:none;
+    border:0;
+    border-radius:20%;/*角丸は必要に応じて変更してください*/
+    background:#696969;/*色は必要に応じて変更してください*/
+}
+
+
+/*見出し*/
+h1{
+    /*ヘッダーのlogoを囲むとき使用します*/
+    /*logoが画像なら下記フォントサイズは不要なので削除すること*/
+    
+    /*logoがテキストのとき使用します*/
+    font-size:42px;/*サイズは必要に応じて変更してください*/
+}
+
+h2{
+    font-size:40px;/*サイズは必要に応じて変更してください*/
+}
+h3{
+    font-size:24px;/*サイズは必要に応じて変更してください*/
+}
+h4{
+    font-size:30px;/*サイズは必要に応じて変更してください*/
+    color:#5d6b5d;
+ 
+}
+
+
+/* 画像全指定（ボックスが縮んだら画像も縮小） */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.header_logo:hover {
+    opacity: 0.5;
+}
+
+.appli_insta:hover {
+    opacity: 0.5;
+}
+
+.appli_twitter:hover {
+    opacity: 0.5;
+}
+
+footer img:hover {
+    opacity: 0.5;
+}
+
+p{
+        font-size: 16px;
+        font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+
+/* 動画全指定（ボックスが縮んだら動画も縮小）
+video{
+    max-width:100%;
+    height:auto;
+}
+ */
+
+ .fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 400ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+
+
+
+
+
+/* スイッチャー用 ココから */
+/* 親要素 */
+.slider_bg{
+    width:100%;
+    height:120vh;
+    /* background-attachment:fixed; */
+    background-position:center center; 
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* position:relative; */
+}
+
+
+
+#wrapper {
+	margin:0 auto;	
+}
+
+/* ヘッダー */
+header{
+    width:100%;
+    /* ヘッダー表示固定 ここから
+    position:fixed;
+    z-index:10000;
+    ここまで 不要なら削除すること */
+}
+
+
+
+
+/* メインビジュアル */
+
+
+/* メインコンテンツ */
+div{
+    overflow:hidden;/*余分な余白を削除*/
+}
+main{
+    overflow:hidden;/*余分な余白を削除*/
+    background-color:#dbdedb;
+
+}
+article{
+    overflow:hidden;/*余分な余白を削除*/
+}
+section{
+    overflow:hidden;/*余分な余白を削除*/
+}
+
+
+/* ヘッダー */
+.header_logo{
+        position:absolute;
+        top:30px;
+        left:70px;
+    }
+
+.copy1{
+    position:absolute;
+    top:180px;
+    left:70px;
+    color: #5d6b5d;
+    font-weight: bold;
+}
+
+
+
+.copy2{
+    position:absolute;
+    bottom:-80px;
+    right:70px;
+    color: #5d6b5d;
+    font-weight: bold;
+}
+
+.new{
+    position:absolute;
+    bottom:-40px;
+    right:120px;
+}
+
+.bestshampoo{
+    position:absolute;
+    top:30px;
+    right:100px;
+}
+
+
+/* main */
+/*Product Summary*/
+.about{
+    background-image: url(../img/plante.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    position:relative;
+    overflow: visible;
+    background-position: center ;
+}
+
+.about_shampoo{
+    position:absolute;
+    top:40px;
+    right:100px;
+}
+
+.about_title{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.about_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+
+
+.about_text h4{
+    color:#474a47;
+    text-align: left;
+    line-height: 2.5em;
+    letter-spacing:0.05em;
+    font-size: 25px;
+    margin: 50px 0 50px 100px;
+}
+
+.about_text span{
+    font-size: 35px;
+}
+
+
+.box{
+    justify-content: space-between;
+    padding: 50px 70px 0px 70px;
+    display: flex; 
+    }
+
+.box_right{
+    padding: 65px 20px 0px 65px;
+}    
+    
+
+.box p{
+    font-size: 18px;
+    color: #474a47;
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-weight: bold;
+}
+
+
+/* Plus Airy */
+
+
+
+
+
+
+
+.bkg_no123_top{
+    background-image: url(../img/bkg_no123_top.png);
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.bkg_no123_bottom{
+    background-image: url(../img/bkg_no123_bottom.png);
+    background-repeat: no-repeat;
+    background-position: 1% 30%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.plus_airy_title{
+    text-align: center;
+    margin-top: 350px;
+}
+
+.plus_airy_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+.no1{
+    justify-content: space-between;
+    padding: 50px 200px 95px 125px;
+    display: flex;
+    align-items: center;
+    }
+
+.no1_title{
+    display: flex;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;    
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.no1 h4,.no2 h4, .no3 h4{
+    margin-bottom: 10%;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+}
+
+.no1 p{
+    font-size: 16px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+}
+
+.no2{
+justify-content: space-between;
+padding: 50px 125px 95px 200px;
+display: flex; 
+align-items: center;
+}
+
+.no2_title{
+    display: flex;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;    
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.no2_left{
+    margin-top:300px;
+}
+
+
+
+.no2 p{
+    font-size: 16px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.no3{
+justify-content: space-between;
+padding: 50px 200px 95px 125px;
+display: flex; 
+align-items: center;
+}
+
+.no3_title{
+    display: flex;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;    
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+
+
+.no3 p{
+    font-size: 16px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+}
+
+
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(20px -20px 18px rgba(0,0,0,0.15));
+    filter: drop-shadow(20px -20px 18px rgba(0,0,0,0.15));
+    }
+    .no1_left img,.no3_left img {
+        width: 90%;
+        margin: 20px 20px;}
+
+
+
+    .anim-box_zoomin_no1{
+        animation: zoomIn 10s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+      }
+       
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .anim-box_zoomin_no3{
+        animation: zoomIn 12s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+      }
+       
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+
+
+
+/* Campaign */
+
+.main_bottom{
+    background-color: #edede8;
+}
+
+.campaign_title{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.campaign_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+.bkg_leaf{
+    background-image: url(../img/bkg_leaf.png);
+    background-repeat:  no-repeat;
+    background-position: center;
+}
+
+.campaign{
+justify-content: space-between;
+padding: 100px 90px 95px 90px;
+display: flex; 
+}
+
+
+
+.drop-shadow_campaign {
+    -webkit-filter: drop-shadow(30px 30px 4px rgba(255, 255, 255, 0.15));
+    filter: drop-shadow(30px 30px 4px rgba(255, 255, 255, 0.15));
+    }
+    .campaign_left img {
+        width: 90%;
+        margin: 20px 20px 20px;}
+
+
+
+    .anim-box_zoomin_campaign{
+        animation: zoomIn 15s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+      }
+       
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+
+.campaign h4{
+    margin-top: 100px;
+}
+
+.campaign p{
+    color:#5d6b5d;
+    padding:65px 0 0 40px;
+    font-size: 18px;
+    line-height: 2.5em;
+    letter-spacing:0.05em;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+/* 開催期間 */
+
+.period{
+    position: relative;
+}
+
+.period_title{
+    background-color:#f2e755;
+    width: 250px;
+    margin:0 40px 0 130px;
+    color:#2c2828;
+    text-align:center;
+    font-size:25pt;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-weight: lighter;
+    letter-spacing:0.05em;
+}
+
+.period p{
+    color:#2c2828;
+    margin:15px 0 100px 130px;
+    font-size:24pt;
+    letter-spacing:0.05em;
+}
+
+.period img{
+    position: absolute;
+    top:120px;
+    left:125px;
+}
+
+
+/* PRESENT */
+
+.present_appli_title{
+    color:#5d6b5d;
+    text-align:center;
+    font-size: 30px;
+    font-family:  "Times New Roman";
+    font-weight: lighter;
+    letter-spacing:0.05em;
+    margin-bottom: 50px;
+}
+
+.present{
+    color:#333333;
+    text-align:center;
+    font-size:18pt;
+    letter-spacing:0.05em;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-weight: lighter;
+}
+
+.present1_title img{
+    margin-right: 10px;
+}
+
+
+
+.present1{
+    justify-content: space-between;
+    padding: 100px 125px 0px 200px;
+    display: flex; 
+    align-items: center;
+}
+
+.present1_title{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.present1_title h4{
+    background-color:#afbea8;
+    color:#ffffff;
+    padding: 1px 10px;
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-size: 18px;
+
+}
+
+.present1 p{
+    color:#5d6b5d;
+    padding: 20px;
+    font-size: 18px;
+    line-height:2em;
+    font-weight: bold;
+}
+
+
+.present2{
+    justify-content: space-between;
+    padding: 50px 200px 95px 125px;
+    display: flex; 
+    align-items: center;
+}
+
+.present2_title{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.present2_title h4{
+    background-color:#afbea8;
+    color:#ffffff;
+    padding: 1px 10px;
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-size: 18px;
+}
+
+
+.present2_title img{
+    margin-right: 10px;
+}
+
+.present2 p{
+    color:#5d6b5d;
+    padding: 20px;
+    font-size: 18px;
+    line-height:2em;
+    font-weight: bold;
+}
+
+
+
+.drop-shadow_present2 {
+    -webkit-filter: drop-shadow(30px 30px 4px rgba(255, 255, 255, 0.15));
+    filter: drop-shadow(30px 30px 4px rgba(255, 255, 255, 0.15));
+    }
+    .present2_left img {
+        width: 90%;
+        margin: 20px 20px 20px;}
+
+
+
+/* APPLICATION */
+
+.appli{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 125px 95px 125px;
+
+}
+
+.box_appli1, .box_appli2{
+width: 450px;
+height:560px;
+background-color: #ffffff;
+position: relative;
+}
+
+.step{
+    margin-top: 20px;
+    text-align: center;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.appli1, .appli2{
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+.appli_text{
+    margin-left: 90px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.sns_logo{
+    display: flex;
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top:15px;
+    justify-content: space-between;
+}
+
+
+.sns_logo p{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.appli2_btn{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 180px;
+    background-color: #afbea8;
+    color: #ffffff;
+    letter-spacing: 0.05cm;
+    line-height: 180%;
+    margin-right: 10px;
+}
+
+ 
+.anim-box {
+    animation: poyopoyo 2s ease-out infinite;
+    opacity: 1;
+  }
+  @keyframes poyopoyo {
+    0%, 40%, 60%, 80% {
+      transform: scale(1.0);
+    }
+    50%, 70% {
+      transform: scale(0.95);
+    }
+  }
+   
+
+
+/* 応募規約 */
+
+h5{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.note{
+    width: 1000px;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+
+    overflow:auto;
+    margin:0 auto ;
+    padding:20px;
+    height:200px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+.note h5{
+    font-size: 18px;
+    letter-spacing:0.05em;
+    padding: 20px;
+    text-align: center;
+}
+
+.note p{
+    padding: 5px 50px;
+    font-size: 11px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+
+/* フッター */
+footer{
+    width:100%;
+    height: 400px;
+    background-color:#afbea8;
+}
+
+.footer_text{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing:0.1em;
+    font-weight: bold;
+}
+
+footer .logo{
+    margin-left: 80px;
+    margin-top: 45px;
+}
+
+.sns{
+    display: flex;
+    justify-content: center;
+}
+
+.sns img{
+    padding: 15px;
+    margin-bottom: 80px;
+}
+
+
+
+
+/* チェック用ボーダー */
+/*article, section, article div{
+    border:1px solid red;
+}
+.box_check{
+    border:1px solid red;
+}*/
+
+
+/* SP */
+
+/*SPレイアウト*/
+@media only screen and (max-width: 750px) {
+/*フルードイメージ*/
+img, object, embed, video {max-width: 100%;height:auto;}
+
+#wrapper {
+	width:auto;
+}
+
+
+/* ヘッダー */
+header{
+    width:100%;
+    /* ヘッダー表示固定 ここから
+    position:fixed;
+    z-index:10000;
+    ここまで 不要なら削除すること */
+}
+
+
+/* メインビジュアル */
+
+
+/* メインコンテンツ */
+div{
+    overflow:hidden;/*余分な余白を削除*/
+}
+main{
+    overflow:hidden;/*余分な余白を削除*/
+    background-color:#dbdedb;
+
+}
+article{
+    overflow:hidden;/*余分な余白を削除*/
+}
+section{
+    overflow:hidden;/*余分な余白を削除*/
+}
+
+
+/* ヘッダー */
+
+.slider_bg{
+        width: 100%;
+        height: 120vh;
+}
+
+
+.header_logo{
+        position:absolute;
+        top:15%;
+        left:10%;
+    }
+
+.copy{
+    display: inline-block;
+}
+
+.copy1{
+    position:absolute;
+    top:32%;
+    left:10%;
+    color: #5d6b5d;
+    font-size: clamp(38px,3vw,40px);
+    line-height: 150%;
+}
+
+.copy2{
+    position:absolute;
+    bottom: 2%;
+    color: #5d6b5d;
+    font-size: clamp(30px,3vw,40px);
+    right: 10%;
+
+}
+
+.new{
+    position:absolute;
+    bottom: 6%;
+    right: 10%;
+
+}
+
+.bestshampoo{
+    position:absolute;
+    top: 5%;
+    right: 0;
+    padding: 5%;
+    width: 30%;
+}
+
+
+/* main */
+/*Product Summary*/
+.about{
+    background-image: url(../img/plante.png);
+    background-repeat: no-repeat;
+    height: 140vh;
+    position:relative;
+    overflow: visible;
+    background-position: center ;
+    background-size: contain;
+    width: 100%;
+}
+
+.about_shampoo{
+    position:absolute;
+    top: 40%;
+    left:0;
+    margin: 5%;
+    width: 90%;
+}
+
+.about_title{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.about_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+.about_text h4{
+    color:#474a47;
+    text-align: left;
+    line-height: 230%;
+    letter-spacing:0.05em;
+    font-size: 25px;
+    margin: 0% 7%;
+    font-size: clamp(16px,3vw,25px);
+    text-align: center;
+}
+
+.about_text span{
+    font-size: 35px;
+    font-size: clamp(25px,3vw,35px);
+}
+
+.newline{
+    display: inline-block;
+}
+
+
+.box{
+    flex-direction: column;
+    margin-top: 70%;
+    padding: 0px 30px;
+    }
+
+    .box_right{
+        margin: auto;
+        padding: 5%;
+        margin-bottom: 10%;
+    }    
+
+    .box_left{
+        padding:15%;
+        margin-top: 20%;
+    }  
+
+.box p{
+    font-size: 18px;
+    color: #474a47;
+    letter-spacing:0.05em;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+
+/* Plus Airy */
+
+.bkg_no123_top{
+    background-image: url(../img/bkg_no123_top_sp.png);
+    background-repeat: no-repeat;
+    background-position: 90% 5%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50%;
+}
+
+.bkg_no123_bottom{
+    background-image: url(../img/bkg_no123_bottom_sp.png);
+    background-repeat: no-repeat;
+    background-position: 1% 1%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.plus_airy_title{
+    text-align: center;
+    margin-top: 350px;
+}
+
+.plus_airy_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+.no1,.no2,.no3{
+    padding: 35px;
+    display: block; 
+    margin: auto;
+    }
+
+.no1_title img, .no2_title img ,.no3_title img{
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.no1_left,.no2_right,.no3_left{
+margin-bottom: 15%;
+}
+
+
+.no1_title,.no2_title,.no3_title{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2.5em;
+    letter-spacing:0.05em;    
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: clamp(12px,3vw,18px);
+    vertical-align: baseline;
+    display: inline;  
+      
+}
+
+
+
+.no1_title span, .no2_title span, .no3_title span{
+    display: inline-block; 
+}
+
+
+
+.no1 h4, .no2 h4, .no3 h4{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 18px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-size: clamp(14px,3vw,18px);
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.no1 p,.no3 p,.no2 p{
+    font-size: 16px;
+    color: #6e6b6b; 
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-size: clamp(12px,3vw,18px);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.no2_right{
+    padding: 5%;
+}
+
+.no3_img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/* Campaign */
+
+.main_bottom{
+    background-color: #edede8;
+}
+.campaign{
+    margin: auto;
+}
+
+
+.campaign_title{
+    text-align: center;
+}
+
+.campaign_title h3{
+    text-align: center;
+    font-size: 48px;
+    color: #5d6b5d;
+    font-family:  "Times New Roman";
+    letter-spacing: 0.02em;
+    margin-top:25px;
+    margin-bottom: 10px;
+}
+
+.bkg_leaf{
+    background-image: url(../img/bkg_leaf.png);
+    background-repeat:  no-repeat;
+    background-position: center;
+}
+
+.campaign{
+padding: 5%;
+flex-direction: column-reverse;
+text-align: center;
+}
+
+.campaign_left{
+    margin: auto;
+    padding: 5%;
+    padding-right: 9%;
+
+}
+
+.campaign_left img {margin: 5% 5% 5%;}
+
+
+.campaign p{
+    color:#5d6b5d;
+    font-size: 18px;
+    line-height: 2.5em;
+    letter-spacing:0.05em;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: clamp(12px,2vw,18px);
+    display:inline-block;
+    padding: 10% 0;
+}
+
+
+
+.campaign_right h4{
+text-align: center;
+font-size: clamp(24px,3vw,36px);
+}
+
+.campaign_right h4 span{
+    display: inline-block;
+}
+
+/* 開催期間 */
+
+.period{
+    position: relative;
+    margin-top: 50px;
+}
+
+.period_title{
+    background-color:#f2e755;
+    width:clamp(100px,2vw,200px);
+    margin:20px;
+    color:#2c2828;
+    text-align:center;
+    font-size:25pt;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-weight: lighter;
+    letter-spacing:0.05em;
+    font-size: clamp(16px,3vw,24px);
+}
+
+.period p{
+    color:#333333;
+    margin:10px;
+    font-size:24pt;
+    letter-spacing:0.05em;
+    font-size: clamp(16px,3vw,24px);
+    text-align: center;
+    font-weight: bold;
+}
+
+.period img{
+    position: absolute;
+    top:120px;
+    left:125px;
+}
+
+
+/* PRESENT */
+
+.present_appli_title{
+    color:#5d6b5d;
+    text-align:center;
+    font-size: 30px;
+    font-family:  "Times New Roman";
+    font-weight: lighter;
+    letter-spacing:0.05em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.present{
+    color:#333333;
+    text-align:center;
+    font-size:18pt;
+    letter-spacing:0.05em;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-weight: lighter;
+    font-size: clamp(20px,3vw,24px);
+
+}
+
+.present span{
+    display: inline-block;
+}
+
+.present1_title img , .present2_title img{
+    margin-top: 20px;
+    margin-right: auto;
+    width: 50%;
+}
+
+.present1{
+    padding: 20px;
+    flex-direction: column-reverse;
+}
+
+.present1_title, .present2_title{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.present1_title h4, .present2_title h4{
+    background-color:#afbea8;
+    color:#ffffff;
+    margin: 5px;
+    line-height: 2em;
+    letter-spacing:0.05em;
+    font-size: 18px;
+    font-size: clamp(16px,3vw,18px);
+    margin-top: 25px;
+}
+
+.present1 p, .present2 p{
+    color:#5d6b5d;
+    padding: 20px;
+    font-size: 18px;
+    line-height:2em;
+    font-size: clamp(16px,3vw,18px);
+}
+
+.present2{
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.present2_left{
+    box-shadow: 30px 20px 4px rgba(255, 255, 255, 0.25);
+}
+
+/* APPLICATION */
+
+.appli{
+    width:100%;
+    padding: 3% 10%;
+    flex-direction: column;
+}
+
+.box_appli1, .box_appli2{
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom:10%;
+}
+
+.step{
+    margin-top: 20px;
+    text-align: center;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.appli1, .appli2{
+    margin: auto;
+    display: block;
+    padding: 5px;
+}
+
+.appli_text{
+    margin: 8px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: clamp(14px,3vw,18px);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.sns_logo{
+    display: flex;
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top:15px;
+    justify-content: space-between;
+}
+
+
+.sns_logo p{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.appli2_btn{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 180px;
+    background-color: #afbea8;
+    color: #ffffff;
+    letter-spacing: 0.05cm;
+    line-height: 180%;
+    margin-right: 10px;
+}
+
+
+
+/* 応募規約 */
+h5{
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.note{
+    width: 90%;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+.note h5{
+    font-size: 18px;
+    letter-spacing:0.05em;
+    padding: 20px;
+    text-align: center;
+}
+
+.note p{
+    padding: 2% 5%;
+    font-size: 11px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+}
+
+
+/* フッター */
+footer{
+    width:100%;
+    background-color:#afbea8;
+}
+
+footer p{
+    text-align: center;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing:0.1em;
+    font-size: clamp(14px,3vw,16px);
+}
+
+footer .logo{
+    margin-top: 8%;
+    margin-left: 8%;
+    padding: 1%;
+
+}
+
+.sns{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+}
